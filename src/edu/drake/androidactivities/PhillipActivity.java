@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+
+// here is a commenet  
 public class PhillipActivity extends Activity {
 
 	private static final String TAG = "PhillipActivity";
