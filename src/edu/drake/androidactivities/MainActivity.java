@@ -16,22 +16,22 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		buttonAlex = (Button) findViewById(R.id.button1);
-		buttonPhillip = (Button) findViewById(R.id.button2);
+		buttonAlex = (Button) findViewById(R.id.button1); //initialize button for alex
+		buttonPhillip = (Button) findViewById(R.id.button2); //initialize button for Phillip
 		
-		buttonAlex.setOnClickListener(new OnClickListener() {
+		buttonAlex.setOnClickListener(new OnClickListener() { //set listener for alex
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(v.getContext(), AlexActivity.class);
+				Intent intent = new Intent(v.getContext(), AlexActivity.class); //when clicked, pull up an instance of alex's activity
 				startActivity(intent);
 			}
 		});
 		
 		
-		buttonPhillip.setOnClickListener(new OnClickListener() {
+		buttonPhillip.setOnClickListener(new OnClickListener() { //set listener for Phillip
 			public void onClick(View v) {
-				Intent intent = new Intent(v.getContext(), PhillipActivity.class);
+				Intent intent = new Intent(v.getContext(), PhillipActivity.class); //when clicked pull up an instance of Phillip's activity
 				startActivity(intent);
 			}
 		});
